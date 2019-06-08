@@ -1,0 +1,125 @@
+/* Reset */
+
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Introduction */
+
+#introduction {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #DFE6E9;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 15px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  align-items: center;
+}
+
+/* Introduction -> Image */
+
+.imageDiv img {
+  max-width: 400px;
+  height: auto;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: 10px 10px 30px gray;
+  position: relative;
+}
+
+/* Introduction -> Content */
+
+.contentDiv {
+  width: 100%;
+  min-height: 400px;
+  background-color: white;
+  box-shadow: 10px 10px 8px #CCC;
+}
+
+/* Introduction -> Content -> Infos Container */
+
+.contentDiv .infosContainer::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #333;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.contentDiv .infosContainer {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* Introduction -> Content -> Infos Container -> Info Items */
+
+.infosContainer .info {
+  padding: 20px 0px;
+  border-top: 1px solid #DDD;
+}
+
+.infosContainer .info:first-child {
+  border-top: 0px;
+}
+
+.infosContainer .info h3 {
+  font-size: 1.1875em;
+  line-height: 2em;
+  font-family: 'Poiret One', Segoe, 'Segoe UI', 'Helvetica Neue', Arial, monospace, sans-serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.infosContainer .info p {
+  font-size: 1.1875em;
+  font-family: 'Poiret One', Segoe, 'Segoe UI', 'Helvetica Neue', Arial, monospace, sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Introduction -> Learn More */
+
+#introduction .learnMore {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  color: #333;
+  font-size: 1em; 
+  letter-spacing: 2px;
+}
+
+/* Media Querys */
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .imageDiv img {
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .imageDiv img {
+    width: 300px;
+  }
+}

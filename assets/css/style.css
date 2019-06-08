@@ -1,6 +1,7 @@
 /* Reset */
 
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap');
 
 * {
   padding: 0;
@@ -11,6 +12,12 @@ a {
   text-decoration: none;
 }
 
+.container {
+  max-width: 1200px;
+  padding: 15px;
+  margin: auto;
+}
+
 /* Introduction */
 
 #introduction {
@@ -19,10 +26,7 @@ a {
   background-color: #DFE6E9;
 }
 
-.container {
-  max-width: 1200px;
-  padding: 15px;
-  margin: auto;
+#introduction .container {
   display: flex;
   flex-direction: row;
   border-radius: 10px;
@@ -101,15 +105,168 @@ a {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  padding-bottom: 20px;
   color: #333;
   font-size: 1em; 
   letter-spacing: 2px;
 }
 
+/* Games Timeline -> Title */
+
+#gamesTimeline .titleDiv {
+  margin-top: 30px;
+}
+
+#gamesTimeline .titleDiv h1 {
+  font-size: 2em;
+  line-height: 2.25em;
+  font-family: 'Poiret One', Segoe, 'Segoe UI', 'Helvetica Neue', Arial, monospace, sans-serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#gamesTimeline .titleDiv h1::after {
+  content: '';
+  width: 150px;
+  height: 1px;
+  background-color: #DFE6E9;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+/* Games Timeline -> Timeline */
+
+.timeline {
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  margin: 50px auto;
+  padding: 40px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Games Timeline -> Timeline -> Central Line */
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: #DFE6E9;
+}
+
+/* Games Timeline -> Timeline -> Items */
+
+.timeline ul li.timelineItem {
+  list-style: none;
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.timeline ul li.timelineItem:nth-child(odd) {
+  float: left;
+  text-align: right;
+  clear: both;
+}
+
+.timeline ul li.timelineItem:nth-child(even) {
+  float: right;
+  text-align: left;
+  clear: both;
+}
+
+.timeline ul li.timelineItem:nth-child(odd)::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(51, 51, 51, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(51, 51, 51, 0.2);
+}
+
+.timeline ul li.timelineItem:nth-child(even)::after {
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: -6px;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(51, 51, 51, 1);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(51, 51, 51, 0.2);
+}
+
+/* Games Timeline -> Timeline -> Item -> Content */
+
+.timeline ul li.timelineItem .timelineContent {
+  padding-bottom: 20px;
+}
+
+/* Games Timeline -> Timeline -> Item -> Content -> Title */
+
+.timeline ul li.timelineItem .timelineContent h3 {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Games Timeline -> Timeline -> Item -> Content -> Items spacement */
+
+.timeline ul.timelineGames {
+  margin: 20px 0px;
+}
+
+/* Games Timeline -> Timeline -> Item -> Content -> Game List */
+
+.timeline ul.timelineGames li {
+  list-style: none;
+  line-height: 1.3125em;
+}
+
+.timeline ul li.timelineItem:nth-child(odd) .time button {
+  border: 0;
+  position: absolute;
+  top: 12px;
+  right: -165px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 0 3px rgba(51, 51, 51, 0.2);
+}
+
+.timeline ul li.timelineItem:nth-child(even) .time button {
+  border: 0;
+  position: absolute;
+  top: 12px;
+  left: -165px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 0 3px rgba(51, 51, 51, 0.2);
+}
+
 /* Media Querys */
 
 @media only screen and (max-width: 768px) {
-  .container {
+  #introduction .container {
     flex-direction: column;
   }
 

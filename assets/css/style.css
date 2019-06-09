@@ -151,7 +151,6 @@ a {
   font-family: 'Montserrat', sans-serif;
   position: relative;
   margin: 0px auto;
-  margin-bottom: 40px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -239,12 +238,15 @@ a {
   line-height: 1.3125em;
 }
 
-.timeline ul li.timelineItem:nth-child(odd) .time button {
+/* Games Timeline -> Timeline -> Item -> a */
+
+.timeline ul li.timelineItem:nth-child(odd) .learnMoreBtn a {
   border: 0;
   position: absolute;
   top: 12px;
   right: -165px;
   font-family: 'Montserrat', sans-serif;
+  font-size: 0.75em;
   padding: 10px 20px;
   background-color: #333;
   color: white;
@@ -255,12 +257,13 @@ a {
   box-shadow: 0 0 0 3px rgba(51, 51, 51, 0.2);
 }
 
-.timeline ul li.timelineItem:nth-child(even) .time button {
+.timeline ul li.timelineItem:nth-child(even) .learnMoreBtn a {
   border: 0;
   position: absolute;
   top: 12px;
   left: -165px;
   font-family: 'Montserrat', sans-serif;
+  font-size: 0.75em;
   padding: 10px 20px;
   background-color: rgba(51, 51, 51, 1);
   color: white;
@@ -271,7 +274,7 @@ a {
   box-shadow: 0 0 0 3px rgba(51, 51, 51, 0.2);
 }
 
-.timeline ul li.timelineItem .time button:hover {
+.timeline ul li.timelineItem .learnMoreBtn a:hover {
   background-color: rgba(51, 51, 51, 0.8);
   transition: all .25s ease-in-out;
 }
@@ -302,10 +305,11 @@ a {
     top: -18px;
     left: 16px;
   }
-  .timeline ul li.timelineItem:nth-child(odd) .time button, 
-  .timeline ul li.timelineItem:nth-child(even) .time button {
+  .timeline ul li.timelineItem:nth-child(odd) .learnMoreBtn a, 
+  .timeline ul li.timelineItem:nth-child(even) .learnMoreBtn a {
     top: -30px;
     left: 50px;
+    right: inherit;
   }
 }
 

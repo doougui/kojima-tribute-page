@@ -265,11 +265,7 @@ a {
 
 .timeline ul li.timelineItem .time button:hover {
   background-color: rgba(51, 51, 51, 0.8);
-  -webkit-transition: all .25s ease-in-out;
-     -moz-transition: all .25s ease-in-out;
-      -ms-transition: all .25s ease-in-out;
-       -o-transition: all .25s ease-in-out;
-          transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
 
 /* Media Querys */
@@ -278,9 +274,30 @@ a {
   #introduction .container {
     flex-direction: column;
   }
-
   .imageDiv img {
     border-radius: 10px;
+  }
+  .timeline::before {
+    left: 20px;
+  }
+  .timeline ul li.timelineItem:nth-child(odd),
+  .timeline ul li.timelineItem:nth-child(even) {
+    width: 100%;
+    text-align: left;
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+  .timeline ul li.timelineItem:nth-child(odd)::before,
+  .timeline ul li.timelineItem:nth-child(even)::before,
+  .timeline ul li.timelineItem:nth-child(odd)::after,
+  .timeline ul li.timelineItem:nth-child(even)::after {
+    top: -18px;
+    left: 16px;
+  }
+  .timeline ul li.timelineItem:nth-child(odd) .time button, 
+  .timeline ul li.timelineItem:nth-child(even) .time button {
+    top: -30px;
+    left: 50px;
   }
 }
 

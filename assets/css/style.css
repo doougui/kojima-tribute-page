@@ -18,6 +18,31 @@ a {
   margin: auto;
 }
 
+.titleDiv {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.titleDiv h1 {
+  font-size: 2em;
+  line-height: 2.25em;
+  font-family: 'Poiret One', Segoe, 'Segoe UI', 'Helvetica Neue', Arial, monospace, sans-serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.titleDiv h1::after {
+  content: '';
+  width: 150px;
+  height: 1px;
+  background-color: #DFE6E9;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
 /* Introduction */
 
 #introduction {
@@ -46,7 +71,7 @@ a {
 
 /* Introduction -> Content */
 
-.contentDiv {
+#introduction .contentDiv {
   width: 100%;
   min-height: 400px;
   background-color: white;
@@ -55,7 +80,7 @@ a {
 
 /* Introduction -> Content -> Infos Container */
 
-.contentDiv .infosContainer::before {
+#introduction .contentDiv .infosContainer::before {
   content: '';
   display: block;
   width: 100%;
@@ -65,7 +90,7 @@ a {
   border-bottom-right-radius: 5px;
 }
 
-.contentDiv .infosContainer {
+#introduction .contentDiv .infosContainer {
   width: 80%;
   height: 100%;
   margin: 0 auto;
@@ -111,30 +136,13 @@ a {
   letter-spacing: 2px;
 }
 
-/* Games Timeline -> Title */
+/* Story -> Content */
 
-#gamesTimeline .titleDiv {
-  margin-top: 30px;
-}
-
-#gamesTimeline .titleDiv h1 {
-  font-size: 2em;
-  line-height: 2.25em;
-  font-family: 'Poiret One', Segoe, 'Segoe UI', 'Helvetica Neue', Arial, monospace, sans-serif;
-  font-weight: normal;
-  letter-spacing: 2px;
+#story .contentDiv p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125em;
+  line-height: 1.75em;
   text-align: center;
-  text-transform: uppercase;
-}
-
-#gamesTimeline .titleDiv h1::after {
-  content: '';
-  width: 150px;
-  height: 1px;
-  background-color: #DFE6E9;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 10px;
 }
 
 /* Games Timeline -> Timeline */
@@ -142,8 +150,8 @@ a {
 .timeline {
   font-family: 'Montserrat', sans-serif;
   position: relative;
-  margin: 50px auto;
-  padding: 40px 0;
+  margin: 0px auto;
+  margin-bottom: 40px;
   width: 100%;
   box-sizing: border-box;
 }

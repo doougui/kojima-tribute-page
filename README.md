@@ -26,5 +26,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 2. Clone repository (```git clone https://github.com/yourname/kojima_tribute_page```)
 3. Create your feature branch (```git checkout -b your_feature_name```)
 4. Commit your changes (```git commit -am 'Add some changes'```)
-5. Push to the branch (```git push origin your_feature_name```)
+5. Push it to the branch (```git push origin your_feature_name```)
 5. Create a new Pull Request

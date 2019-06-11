@@ -18,7 +18,7 @@ Este projeto foi feito somente com fins educativos, qualquer sugestão de melhor
 
 ## Licença
 
-Este projeto é linceciado na licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
+Este projeto é licenciado na licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
 
 ## Contribuindo
 

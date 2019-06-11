@@ -12,6 +12,20 @@ a {
   text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  width: 3px;
+  background-color: #FFFFFF;
+  height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  height: 0;
+}
+
 .container {
   max-width: 1200px;
   padding: 15px;
@@ -238,7 +252,7 @@ a {
   line-height: 1.3125em;
 }
 
-/* Games Timeline -> Timeline -> Item -> a */
+/* Games Timeline -> Timeline -> Item -> Learn More Button */
 
 .timeline ul li.timelineItem:nth-child(odd) .learnMoreBtn a {
   border: 0;
@@ -276,7 +290,49 @@ a {
 
 .timeline ul li.timelineItem .learnMoreBtn a:hover {
   background-color: rgba(51, 51, 51, 0.8);
-  transition: all .25s ease-in-out;
+  transition: all .25s ease;
+}
+
+/* Awards -> Awards Div */
+
+.awardsDiv {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Awards -> Awards Div -> Awards Item */
+
+.awardsItem {
+  font-family: 'Montserrat', sans-serif;
+  padding: 30px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  margin: 10px 0px;
+  box-shadow: 0px 0px 5px #CCC;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #333;
+  color: white;
+  min-height: 200px;
+}
+
+footer a {
+  color: #DFE6E9;
+}
+
+footer a:hover {
+  transition: all .25s ease;
+  color: #afc5ce;
 }
 
 /* Media Querys */

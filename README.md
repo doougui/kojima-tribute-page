@@ -7,7 +7,7 @@
 
 This project was made only for educational purposes, any suggestion of improvement is welcome. Then, feel free to submit your PR or publish an Issue.
 
-## Referencias
+## References
 
 - [BuscaBiografias.com](https://www.buscabiografias.com/biografia/verDetalle/10144/Hideo%20Kojima) - Games produced.
 - [Wikipedia](https://pt.wikipedia.org/wiki/Hideo_Kojima) - Date of birth and occupation.

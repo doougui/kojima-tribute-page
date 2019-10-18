@@ -1,11 +1,11 @@
 # Hideo Kojima Tribute Page
-> A tribute page for Hideo Kojima. Made as a exercise from course "PHP from zero to professional".
+> A simple tribute page for Hideo Kojima. Made to review and improve my front-end skills.
 
 ![](header.png)
 
 ## About
 
-This project was made only for educational purposes, any suggestion of improvement is welcome. Then, feel free to submit your PR or publish an Issue.
+This project was made only for educational purposes, any suggestion of improvement is welcome. Then, feel free to submit your PR or publish an issue.
 
 ## References
 
